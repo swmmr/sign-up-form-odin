@@ -7,6 +7,64 @@
     <title>ODIN Sign Up Form</title>
 </head>
 <body>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam non similique quae hic iure, suscipit impedit labore, maiores, sapiente velit harum. Corrupti cupiditate fuga nihil nesciunt porro, odio nostrum modi.
+    <div class="left">
+        <div class="logo">
+            <img class="odin-logo" src="img/odin-lined.png" alt="odins logo">
+            <div class="logo-text">ODIN</div>
+        </div>
+        <div class="credit">Photo by <u>Halie West</u> on <u>Unsplash</u></div>
+    </div>
+    <div class="right">
+        <div class="top">
+            <div class="top-text">This is not a real online service! This webpage is a practice for forms and styling
+                done through TheOdinProject. Very grateful this online service is out there! Sign up with them instead!
+            </div>
+            <div class="top-text-2">
+                Make sure to learn from them!
+            </div>
+        </div>
+        <div class="middle">
+            <div class="form-container">
+                <form id="myForm" action="#" method="get">
+
+                    <div class="form-group">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="John" required>
+                    </div>
+                   
+                    <div class="form-group">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Green" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="user-email">EMAIL</label>
+                        <input type="email" name="user-email" id="user-email" placeholder="email@gmail.com" required>
+                    </div>
+                   
+                    <div class="form-group">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="text" name="phone-number" id="phone-number" 
+                        placeholder="123-456-7890 or 1234567890" pattern="^(\d{10}|\d{3}-\d{3}-\d{4})$"
+                        title="Please input a valid phone number in the format 123-456-7890 or 1234567890" required>
+                    </div>
+                 
+                    <div class="form-group">
+                        <label for="user-password">PASSWORD</label>
+                        <input type="password" name="user-password" id="user-password" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm-password" id="confirm-password" required>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="bottom">
+            <button type="submit" form="myForm">Create Account</button>
+            <div>Already have an account? <a href="#">Log In</a></div>
+        </div>
+    </div>
 </body>
 </html>
